@@ -18,7 +18,6 @@
 class LanguageHolder {
     constructor(languages) {
         this.languagesData = []
-
         Object.keys(languages).forEach(langName => {
             let language = languages[langName]
 
@@ -59,5 +58,5 @@ class LanguageInfo {
 }
 
 function loadLanguages() {
-    return fetch("languages.json").then(res => new LanguageHolder(res.json()))
+    return fetch("data/languages.json").then(res => res.json().then(json => new LanguageHolder(json)))
 }

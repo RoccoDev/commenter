@@ -15,6 +15,7 @@
 // You should have received a copy of the GNU General Public License
 // along with commenter.  If not, see <http://www.gnu.org/licenses/>.
 
-Commenter = {
-    languages: loadLanguages()
-}
+Commenter = {}
+
+// Load the language data
+loadLanguages().then(result => Commenter.languages = result.languagesData);
