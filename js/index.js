@@ -18,4 +18,16 @@
 Commenter = {}
 
 // Load the language data
-loadLanguages().then(result => Commenter.languages = result.languagesData);
+loadLanguages().then(result => {
+    Commenter.languages = result.languagesData
+
+    let selector = document.getElementById("langSelector")
+
+    Commenter.languages.forEach(language => {
+        let option = document.createElement("option")
+        option.value = Commenter.languages.indexOf(language)
+        option.innerHTML = language.name
+
+        selector.appendChild(option)
+    })
+});
