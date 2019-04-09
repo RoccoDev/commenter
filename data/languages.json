@@ -1,0 +1,59 @@
+{
+    "Batchfile": {
+        "single": "REM"
+    },
+    "C": {
+        "single": "//",
+        "block": ["/*", "*/", " *"]
+    },
+    "C++": "C",
+    "C#": "C",
+    "CSS": {
+        "block": ["/*", "*/", " *"]
+    },
+    "Dockerfile": {
+        "single": "#"
+    },
+    "Elixir": "Dockerfile",
+    "F#": {
+        "single": "//",
+        "block": ["(*", "*)", " *"]
+    },
+    "Go": "C",
+    "Groovy": "C",
+    "HTML": {
+        "block": ["<!--", "-->", ""]
+    },
+    "INI": {
+        "single": ";"
+    },
+    "Java": "C",
+    "JavaScript": "C",
+    "Lua": {
+        "single": "--",
+        "block": ["--[[", "--]]", ""]
+    },
+    "Makefile": {
+        "single": "#"
+    },
+    "Markdown": "HTML",
+    "Objective-C": "C",
+    "Perl": {
+        "single": "#",
+        "block": ["=pod", "=cut", ""]
+    },
+    "PHP": "C",
+    "Python": {
+        "single": "#",
+        "block": ["\"\"\"", "\"\"\"", ""]
+    },
+    "Ruby": {
+        "single": "#",
+        "block": ["=begin", "=end", ""]
+    },
+    "Rust": "C",
+    "TypeScript": "C",
+    "SCSS": "C",
+    "Swift": "C",
+    "XML": "HTML"
+}
