@@ -18,12 +18,17 @@
  */
 
 body {
-    background-color: whitesmoke;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  background-color: whitesmoke;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 5% 0;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+.vcenter {
+  padding: 10% 0;
+}
+
+main {
+  flex: 1 0 auto;
+}
